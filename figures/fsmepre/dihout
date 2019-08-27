@@ -1,0 +1,2283 @@
+
+
+
+
+ ********************************************************************************
+ ********************************************************************************
+ ************************* Bond, Angle or Dihedral Scan *************************
+ *************************BOSS Z-Matrix                 *************************
+ *************************           BOSS  4.7          *************************
+ *************************  Linux   Version  Sept 2006  *************************
+ ********************************************************************************
+ ********************************************************************************
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3620    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7399    2   150.7833    4   179.9968
+    6    O         803     803    3     1.3557    4   112.9067    5   180.0013
+    7    C         804     804    4     1.4242    3   104.6502    5   179.9951
+    8    H         805     805    4     1.0810    3   126.5416    7   180.0064
+    9    C         806     806    7     1.3712    4   106.4700    3     0.0093
+   10    H         807     807    7     1.0807    4   127.6400    9   179.9933
+   11    H         808     808    9     1.0807    7   134.0940    4   179.9962
+   12    C         809     809    5     1.8079    3   103.4888    6     0.9992
+   13    H         810     810   12     1.0898    5   109.9238    3    59.6046
+   14    H         811     811   12     1.0892    5   110.5716   13   120.3952
+   15    H         812     812   12     1.0898    5   109.9113   13   240.7627
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+
+
+
+
+                       OPLS Force Field Parameters
+    Atom         Q           Sigma       Epsilon       Alpha
+        1       0.0000       0.0000       0.0000       0.0000      All Solutes    
+        2       0.0000       0.0000       0.0000       0.0000      All Solutes    
+  CW    3      -0.0449       3.5500       0.0700       0.0000      All Solutes    
+  CS    4      -0.2070       3.5500       0.0700       0.0000      All Solutes    
+  S     5      -0.0422       3.5500       0.2500       0.0000      All Solutes    
+  OS    6      -0.1416       2.9000       0.1400       0.0000      All Solutes    
+  CS    7      -0.2091       3.5500       0.0700       0.0000      All Solutes    
+  HA    8       0.1972       2.4200       0.0300       0.0000      All Solutes    
+  CW    9      -0.0928       3.5500       0.0700       0.0000      All Solutes    
+  HA   10       0.1847       2.4200       0.0300       0.0000      All Solutes    
+  HA   11       0.2173       2.4200       0.0300       0.0000      All Solutes    
+  CT   12      -0.2353       3.5000       0.0660       0.0000      All Solutes    
+  HC   13       0.1246       2.5000       0.0300       0.0000      All Solutes    
+  HC   14       0.1246       2.5000       0.0300       0.0000      All Solutes    
+  HC   15       0.1246       2.5000       0.0300       0.0000      All Solutes    
+
+                      Net Charge
+   Reference Solute     0.00000
+ 1st Perturbed Solute   0.00000
+ 2nd Perturbed Solute   0.00000
+
+
+
+ Dihedral                             Fourier Coefficients
+   Angle    Atom  I Type F    V1        V2        V3        V4               Phases          Delta
+      1       6  162  162     0.000     2.200     0.000     0.000      0.00   0.00   0.00     2.0      All Solutes    
+ For S -CW-CS-CS Using C?-CS-CW-C? Type: 165
+ For S -CW-CS-CS Using C?-CS-CW-C? Type: 165
+      2       7  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     2.0      All Solutes    
+      3       8  162  162     0.000     2.200     0.000     0.000      0.00   0.00   0.00     2.0      All Solutes    
+ For CW-CS-CS-CW Using CS-CS-CS-C? Type: 223
+ For CW-CS-CS-CW Using CS-CS-CS-C? Type: 223
+      4       9  223  223     0.000     2.170     0.000     0.000      0.00   0.00   0.00     5.0      All Solutes    
+      5      10  162  162     0.000     2.200     0.000     0.000      0.00   0.00   0.00     2.0      All Solutes    
+ For CS-CS-CW-HA Using C?-CS-CW-H? Type: 165
+ For CS-CS-CW-HA Using C?-CS-CW-H? Type: 165
+      6      11  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     2.0      All Solutes    
+ For CW-S -CT-HC Using HC-CT-S -CT Type:  51
+ For CW-S -CT-HC Using HC-CT-S -CT Type:  51
+      7      13   51   51     0.000     0.000     0.647     0.000      0.00   0.00   0.00    15.0      All Solutes    
+      8      14    0    0     0.000     0.000     0.000     0.000      0.00   0.00   0.00     2.0      All Solutes    
+      9      15    0    0     0.000     0.000     0.000     0.000      0.00   0.00   0.00     2.0      All Solutes    
+ For CT-S -CW-OS Using CU-CW-S -CR Type: 165
+ For CT-S -CW-OS Using CU-CW-S -CR Type: 165
+     10       6  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+ For S -CW-CS-HA Using S -CW-CW-HA Type: 170
+ For S -CW-CS-HA Using S -CW-CW-HA Type: 170
+     11       8  170  170     0.000    10.750     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+ For OS-CW-CS-CS Using OS-CS-CS-C? Type: 223
+ For OS-CW-CS-CS Using OS-CS-CS-C? Type: 223
+     12       7  223  223     0.000     2.170     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+ For OS-CW-CS-HA Using HA-CS-CW-N? Type: 165
+ For OS-CW-CS-HA Using HA-CS-CW-N? Type: 165
+     13       8  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+ For CS-CW-S -CT Using CU-CW-S -CR Type: 165
+ For CS-CW-S -CT Using CU-CW-S -CR Type: 165
+     14      12  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+     15       9  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+ For S -CW-OS-CW Using HA-CW-OS-CW Type: 165
+ For S -CW-OS-CW Using HA-CW-OS-CW Type: 165
+     16       9  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+ For CW-CS-CS-HA Using HA-CS-CW-C? Type: 165
+ For CW-CS-CS-HA Using HA-CS-CW-C? Type: 165
+     17      10  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+ For HA-CS-CS-CW Using HA-CS-CW-C? Type: 165
+ For HA-CS-CS-CW Using HA-CS-CW-C? Type: 165
+     18       9  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+     19      10  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+ For CW-S -CT-HC Using HC-CT-S -CT Type:  51
+ For CW-S -CT-HC Using HC-CT-S -CT Type:  51
+     20      14   51   51     0.000     0.000     0.647     0.000      0.00   0.00   0.00     0.0      All Solutes    
+ For CW-S -CT-HC Using HC-CT-S -CT Type:  51
+ For CW-S -CT-HC Using HC-CT-S -CT Type:  51
+     21      15   51   51     0.000     0.000     0.647     0.000      0.00   0.00   0.00     0.0      All Solutes    
+     22       7  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+     23      11  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+ For CS-CS-CW-OS Using OS-CS-CS-C? Type: 223
+ For CS-CS-CW-OS Using OS-CS-CS-C? Type: 223
+     24       6  223  223     0.000     2.170     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+ For HA-CS-CW-OS Using HA-CS-CW-N? Type: 165
+ For HA-CS-CW-OS Using HA-CS-CW-N? Type: 165
+     25       6  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+     26      11  165  165     0.000     7.250     0.000     0.000      0.00   0.00   0.00     0.0      All Solutes    
+
+                 Bond Stretching Parameters
+  Atom1   Atom2      R0           K0         R1           K1         R2           K2       Delta
+    4       3      1.3670      546.00      1.3670      546.00      1.3670      546.00      0.0232     CS-CW
+    5       3      1.7400      250.00      1.7400      250.00      1.7400      250.00      0.0342     S -CW
+    6       3      1.3600      340.00      1.3600      340.00      1.3600      340.00      0.0293     OS-CW
+    7       4      1.4240      469.00      1.4240      469.00      1.4240      469.00      0.0250     CS-CS
+    8       4      1.0800      367.00      1.0800      367.00      1.0800      367.00      0.0282     HA-CS
+    9       7      1.3670      546.00      1.3670      546.00      1.3670      546.00      0.0232     CW-CS
+   10       7      1.0800      367.00      1.0800      367.00      1.0800      367.00      0.0282     HA-CS
+   11       9      1.0800      367.00      1.0800      367.00      1.0800      367.00      0.0282     HA-CW
+   12       5      1.8100      222.00      1.8100      222.00      1.8100      222.00      0.0363     CT-S 
+   13      12      1.0900      340.00      1.0900      340.00      1.0900      340.00      0.0293     HC-CT
+   14      12      1.0900      340.00      1.0900      340.00      1.0900      340.00      0.0293     HC-CT
+   15      12      1.0900      340.00      1.0900      340.00      1.0900      340.00      0.0293     HC-CT
+    6       9      1.3600      340.00      1.3600      340.00      1.3600      340.00      0.0000     OS-CW
+
+                 Angle Bending Parameters
+  Atom1 Atom2 Atom3    A0       K0       A1       K1       A2       K2      Delta
+     2     3     5     0.00     0.00     0.00     0.00     0.00     0.00    2.000       -CW-S 
+     4     3     6   110.60    70.00   110.60    70.00   110.60    70.00    3.305     CS-CW-OS
+     3     4     7   107.30    70.00   107.30    70.00   107.30    70.00    3.305     CW-CS-CS
+     3     4     8   125.70    35.00   125.70    35.00   125.70    35.00    4.674     CW-CS-HA
+     4     7     9   107.30    70.00   107.30    70.00   107.30    70.00    3.305     CS-CS-CW
+     4     7    10   127.50    35.00   127.50    35.00   127.50    35.00    4.674     CS-CS-HA
+     7     9    11   132.10    35.00   132.10    35.00   132.10    35.00    4.674     CS-CW-HA
+ *** Missing Angle Bend Parameters - Type:CW-S -CT Seeking Synonym. ***
+ Using Synonym: CA-S -CT
+     3     5    12   104.20    62.00   104.20    62.00   104.20    62.00    3.512     CW-S -CT
+     5    12    13   109.50    35.00   109.50    35.00   109.50    35.00    4.674     S -CT-HC
+     5    12    14   109.50    35.00   109.50    35.00   109.50    35.00    4.674     S -CT-HC
+     5    12    15   109.50    35.00   109.50    35.00   109.50    35.00    4.674     S -CT-HC
+     4     3     5   111.00    70.00   111.00    70.00   111.00    70.00    0.000     CS-CW-S 
+ *** Missing Angle Bend Parameters - Type:S -CW-OS Seeking Synonym. ***
+ No Synonym Found - Using Estimate:
+     5     3     6   119.76    60.86   119.76    60.86   119.76    60.86    0.000     S -CW-OS
+     7     4     8   127.50    35.00   127.50    35.00   127.50    35.00    0.000     CS-CS-HA
+     3     6     9   106.50    70.00   106.50    70.00   106.50    70.00    0.000     CW-OS-CW
+     9     7    10   125.70    35.00   125.70    35.00   125.70    35.00    0.000     CW-CS-HA
+     6     9     7   110.60    70.00   110.60    70.00   110.60    70.00    0.000     OS-CW-CS
+     6     9    11   113.40    35.00   113.40    35.00   113.40    35.00    0.000     OS-CW-HA
+    13    12    14   107.80    33.00   107.80    33.00   107.80    33.00    0.000     HC-CT-HC
+    13    12    15   107.80    33.00   107.80    33.00   107.80    33.00    0.000     HC-CT-HC
+    14    12    15   107.80    33.00   107.80    33.00   107.80    33.00    0.000     HC-CT-HC
+
+                     Dipole Moment
+   Reference Solute     0.88537 D
+
+ Quadrupole Moment:      XX        XY        XZ        YY        YZ        ZZ
+   Reference Solute    14.3420    2.9383   -0.1221    8.2941   -0.0613    0.9361 D-A
+
+
+ Total Mol. Wt. of Reference Solute =  114.1618
+
+
+
+
+                    Non-bonded Pairs List (Except Inter-solute)
+
+
+ Atom    1:
+
+ Atom    2:
+
+ Atom    3:   10   11   13   14   15
+
+ Atom    4:   11   12   13   14   15
+
+ Atom    5:    7    8    9   10   11
+
+ Atom    6:    8   10   12   13   14   15
+
+ Atom    7:   12   13   14   15
+
+ Atom    8:    9   10   11   12   13   14   15
+
+ Atom    9:   12   13   14   15
+
+ Atom   10:   11   12   13   14   15
+
+ Atom   11:   12   13   14   15
+
+ Atom   12:
+
+ Atom   13:
+
+ Atom   14:
+
+ Atom   15:
+
+
+Checking for potential problems in the solute Z-matrix file:
+          For Bond Between Atoms    4    3: Expected  4 Torsion Terms, Found  6
+          For Bond Between Atoms    4    7: Expected  4 Torsion Terms, Found  5
+          For Bond Between Atoms    5   12: Expected  3 Torsion Terms, Found  5
+      3 Potential Problems Found.
+ Note - When improper dihedrals are used, excess torsion terms are normal.
+
+
+
+
+                    BOSS Z-Matrix                 
+                        Fri May  5 15:57:27 2017
+                            OPLS Potentials
+
+
+                      Parameters and Coordinates
+
+ NMOL =   0          EDGE =  100.0000  100.0000  100.0000    RCUT =   10.0000
+ NACCPT =        0   NRJECT =        0   MXCON =      12     NCON =       0
+ T(C) =      0.00    OLD E =  0.00000000D+00    NEW E = -0.36464000D+01
+ RDEL =    0.2000    ADEL =   20.0000    VDEL =       0.0    MXS =    2500
+ P(ATM) =     0.0    VOLD =   1000000.0  VNEW =   1000000.0  NVCHG =999999
+ DIELRF =     1.0    Reaction Field NOT Applied
+
+ Information for the Reference Solute:
+ NSCHG=     1        SCUT =   10.0000    ICUT =     0        NCENT =   1    1
+ RDELS1=   0.0000    RDELS2=   0.0000    ADELS1=   0.0000    ADELS2=   0.0000
+ ESOLD=    0.0000    ESONE=    0.0000    WIMAX=  0.000000    WKC =  200.00
+ EXXOLD=   0.0000    EXXNEW=   0.0000    DIELEC=   1.0000    CUTOFF E=    0.000
+ EPOOLD=   0.0000    EPONEW=   0.0000    NPOLX =        0    NPOLS =        0
+ EBNDOL=   0.0000    EBNDNE=   0.0364    EANGOL=   0.0000    EANGNE=   3.1406
+ EDIHOL=   0.0000    EDIHNE=   0.0045    ENBOL=    0.0000    ENBNE=   -6.8279
+ EBCOLD=   0.0000    EBCNEW=   0.0000    SANEW =     0.00    POLCUT=  10.0000
+
+
+ 1-4 Scale Factors: Coul.=   0.20000D+01 L-J=   0.20000D+01  CUTNB =  100.000
+
+ Reaction Coordinate or Lambda Values for the Reference and Perturbed Solutes:
+ RC0  =   10.0000    RC1 =     0.0000    RC2  =    0.0000
+
+
+ Coordinates and Distances in Angstroms
+
+
+ Solute 0:   X          Y          Z
+   -1     0.00000    0.00000    0.00000  X  
+   -1     1.00000    0.00000    0.00000  X  
+    6     1.00000    1.00000    0.00000  C  
+    6    -0.36199    1.00000    0.00000  C  
+   16     1.84929    2.51858    0.00005  S  
+    8     1.52767   -0.24877   -0.00007  O  
+    6    -0.72219   -0.37787   -0.00016  C  
+    1    -1.00560    1.86848    0.00000  H  
+    6     0.45171   -1.08657   -0.00003  C  
+    1    -1.71706   -0.79996   -0.00025  H  
+    1     0.69434   -2.13971   -0.00002  H  
+    6     3.58931    2.02863   -0.03067  C  
+    1     3.79272    1.43657   -0.92274  H  
+    1     4.23412    2.90649   -0.03300  H  
+    1     3.81956    1.42188    0.84484  H  
+
+ Variable and Additional Bonds
+ Atom I      Atom J      RIJ
+     4           3       1.3620
+     5           3       1.7399
+     6           3       1.3557
+     7           4       1.4242
+     8           4       1.0810
+     9           7       1.3712
+    10           7       1.0807
+    11           9       1.0807
+    12           5       1.8079
+    13          12       1.0898
+    14          12       1.0892
+    15          12       1.0898
+     6           9       1.3637
+
+ Variable and Additional Angles
+ Atom I    J     K      Theta
+     2     3     5      150.783
+     4     3     6      112.907
+     3     4     7      104.650
+     3     4     8      126.542
+     4     7     9      106.470
+     4     7    10      127.640
+     7     9    11      134.094
+     3     5    12      103.489
+     5    12    13      109.924
+     5    12    14      110.572
+     5    12    15      109.911
+     4     3     5      119.217
+     5     3     6      127.877
+     7     4     8      128.808
+     3     6     9      105.000
+     9     7    10      125.890
+     6     9     7      110.974
+     6     9    11      114.933
+    13    12    14      109.002
+    13    12    15      108.402
+    14    12    15      108.987
+
+    Surface Area and Volume with Solvent Radius = 1.40
+ Atom    Radius      Access. Area   Access. Vol.  Solute
+   1     0.000          0.000          0.000         1
+   2     0.000          0.000          0.000         1
+   3     1.992          8.441         26.093         1
+   4     1.992         20.729         39.358         1
+   5     1.992         44.274         67.710         1
+   6     1.628          0.000          4.086         1
+   7     1.992         23.440         41.174         1
+   8     1.358         22.726         24.584         1
+   9     1.992         31.082         50.808         1
+  10     1.358         25.889         26.852         1
+  11     1.358         25.890         26.852         1
+  12     1.964         16.487         38.412         1
+  13     1.403         25.657         28.575         1
+  14     1.403         29.103         31.103         1
+  15     1.403         25.656         28.575         1
+
+ Total Solvent Accessible Surface Area =   299.37
+       Total Solvent Accessible Volume =   434.18
+
+  Type            Area          Volume
+ Hydrophobic       96.903        126.665
+ Hydrophilic        0.000          4.086
+ Aromatic         158.196        235.722
+ Weakly Polar      44.274         67.710
+
+ Initial Random Number =0.90977929
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.043221
+     Angle bending energy    =      3.088530
+     Torsional energy        =      0.000119
+     Intrasolute non-bonded  =     -6.824861
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     -3.692991
+
+ Final Dipole Moment =    0.8670 D
+
+ Optimized energy =     -3.692991 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3617    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7390    2   151.6173    4   179.9968
+    6    O         803     803    3     1.3549    4   113.6061    5   179.9999
+    7    C         804     804    4     1.4245    3   104.2197    5   179.9998
+    8    H         805     805    4     1.0810    3   126.7738    7   180.0002
+    9    C         806     806    7     1.3717    4   106.4755    3     0.0003
+   10    H         807     807    7     1.0807    4   127.6362    9   180.0005
+   11    H         808     808    9     1.0807    7   133.9274    4   180.0000
+   12    C         809     809    5     1.8079    3   103.4828    6     0.0000
+   13    H         810     810   12     1.0898    5   109.9263    3    59.6348
+   14    H         811     811   12     1.0892    5   110.5553   13   120.3654
+   15    H         812     812   12     1.0898    5   109.9266   13   240.7313
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    3     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.042406
+     Angle bending energy    =      3.033281
+     Torsional energy        =      0.371988
+     Intrasolute non-bonded  =     -6.821309
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     -3.373634
+
+ Final Dipole Moment =    0.8656 D
+
+ Optimized energy =     -3.373634 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3618    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7390    2   151.6937    4   179.9968
+    6    O         803     803    3     1.3549    4   113.5437    5   175.2169
+    7    C         804     804    4     1.4245    3   104.2365    5   182.3405
+    8    H         805     805    4     1.0810    3   126.7657    7   180.2468
+    9    C         806     806    7     1.3716    4   106.4593    3     1.5478
+   10    H         807     807    7     1.0807    4   127.6435    9   179.0885
+   11    H         808     808    9     1.0807    7   133.9320    4   179.2148
+   12    C         809     809    5     1.8079    3   103.4678    6    10.0000
+   13    H         810     810   12     1.0898    5   109.9414    3    59.4245
+   14    H         811     811   12     1.0892    5   110.5531   13   120.3881
+   15    H         812     812   12     1.0898    5   109.9152   13   240.7266
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.040050
+     Angle bending energy    =      2.876629
+     Torsional energy        =      1.453164
+     Intrasolute non-bonded  =     -6.810337
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     -2.440494
+
+ Final Dipole Moment =    0.8630 D
+
+ Optimized energy =     -2.440494 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3619    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7388    2   151.9150    4   179.9968
+    6    O         803     803    3     1.3551    4   113.3634    5   170.5674
+    7    C         804     804    4     1.4244    3   104.2845    5   184.6106
+    8    H         805     805    4     1.0810    3   126.7420    7   180.4947
+    9    C         806     806    7     1.3715    4   106.4121    3     3.0611
+   10    H         807     807    7     1.0807    4   127.6630    9   178.1971
+   11    H         808     808    9     1.0807    7   133.9477    4   178.4469
+   12    C         809     809    5     1.8079    3   103.4241    6    20.0000
+   13    H         810     810   12     1.0898    5   109.9605    3    59.3211
+   14    H         811     811   12     1.0892    5   110.5475   13   120.4035
+   15    H         812     812   12     1.0899    5   109.9063   13   240.7138
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.036537
+     Angle bending energy    =      2.644086
+     Torsional energy        =      3.144372
+     Intrasolute non-bonded  =     -6.790848
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     -0.965852
+
+ Final Dipole Moment =    0.8632 D
+
+ Optimized energy =     -0.965852 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3622    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7387    2   152.2588    4   179.9968
+    6    O         803     803    3     1.3553    4   113.0818    5   166.1917
+    7    C         804     804    4     1.4243    3   104.3605    5   186.7403
+    8    H         805     805    4     1.0810    3   126.7047    7   180.7402
+    9    C         806     806    7     1.3712    4   106.3387    3     4.5001
+   10    H         807     807    7     1.0807    4   127.6937    9   177.3499
+   11    H         808     808    9     1.0807    7   133.9706    4   177.7168
+   12    C         809     809    5     1.8078    3   103.3598    6    30.0000
+   13    H         810     810   12     1.0897    5   109.9830    3    59.3661
+   14    H         811     811   12     1.0892    5   110.5388   13   120.4126
+   15    H         812     812   12     1.0899    5   109.8928   13   240.6954
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.032410
+     Angle bending energy    =      2.373300
+     Torsional energy        =      5.292755
+     Intrasolute non-bonded  =     -6.761163
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      0.937301
+
+ Final Dipole Moment =    0.8739 D
+
+ Optimized energy =      0.937301 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3625    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7385    2   152.6863    4   179.9968
+    6    O         803     803    3     1.3556    4   112.7293    5   162.2400
+    7    C         804     804    4     1.4242    3   104.4570    5   188.6541
+    8    H         805     805    4     1.0810    3   126.6579    7   180.9778
+    9    C         806     806    7     1.3709    4   106.2467    3     5.8187
+   10    H         807     807    7     1.0807    4   127.7327    9   176.5740
+   11    H         808     808    9     1.0807    7   134.0006    4   177.0477
+   12    C         809     809    5     1.8076    3   103.2861    6    40.0000
+   13    H         810     810   12     1.0897    5   110.0093    3    59.5164
+   14    H         811     811   12     1.0893    5   110.5308   13   120.4216
+   15    H         812     812   12     1.0899    5   109.8742   13   240.6774
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.028200
+     Angle bending energy    =      2.107577
+     Torsional energy        =      7.707493
+     Intrasolute non-bonded  =     -6.719411
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      3.123858
+
+ Final Dipole Moment =    0.9060 D
+
+ Optimized energy =      3.123858 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3629    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7383    2   153.1448    4   179.9968
+    6    O         803     803    3     1.3559    4   112.3508    5   158.8822
+    7    C         804     804    4     1.4240    3   104.5619    5   190.2658
+    8    H         805     805    4     1.0810    3   126.6074    7   181.1973
+    9    C         806     806    7     1.3705    4   106.1475    3     6.9619
+   10    H         807     807    7     1.0807    4   127.7755    9   175.9009
+   11    H         808     808    9     1.0807    7   134.0344    4   176.4679
+   12    C         809     809    5     1.8075    3   103.2207    6    50.0000
+   13    H         810     810   12     1.0897    5   110.0359    3    59.7077
+   14    H         811     811   12     1.0893    5   110.5209   13   120.4260
+   15    H         812     812   12     1.0899    5   109.8540   13   240.6545
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.024689
+     Angle bending energy    =      1.889589
+     Torsional energy        =     10.176256
+     Intrasolute non-bonded  =     -6.665862
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      5.424672
+
+ Final Dipole Moment =    0.9730 D
+
+ Optimized energy =      5.424672 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3632    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7382    2   153.5590    4   179.9968
+    6    O         803     803    3     1.3562    4   112.0075    5   156.3228
+    7    C         804     804    4     1.4239    3   104.6593    5   191.4809
+    8    H         805     805    4     1.0810    3   126.5618    7   181.3761
+    9    C         806     806    7     1.3702    4   106.0570    3     7.8512
+   10    H         807     807    7     1.0807    4   127.8144    9   175.3752
+   11    H         808     808    9     1.0807    7   134.0681    4   176.0139
+   12    C         809     809    5     1.8074    3   103.1772    6    60.0000
+   13    H         810     810   12     1.0897    5   110.0600    3    59.8344
+   14    H         811     811   12     1.0893    5   110.5101   13   120.4301
+   15    H         812     812   12     1.0899    5   109.8371   13   240.6313
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.022605
+     Angle bending energy    =      1.762703
+     Torsional energy        =     12.471850
+     Intrasolute non-bonded  =     -6.604958
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      7.652199
+
+ Final Dipole Moment =    1.0900 D
+
+ Optimized energy =      7.652199 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3634    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7382    2   153.8293    4   179.9968
+    6    O         803     803    3     1.3563    4   111.7891    5   154.8769
+    7    C         804     804    4     1.4238    3   104.7219    5   192.1548
+    8    H         805     805    4     1.0810    3   126.5359    7   181.4776
+    9    C         806     806    7     1.3700    4   105.9983    3     8.3667
+   10    H         807     807    7     1.0807    4   127.8438    9   175.0635
+   11    H         808     808    9     1.0807    7   134.0925    4   175.7453
+   12    C         809     809    5     1.8073    3   103.1608    6    70.0000
+   13    H         810     810   12     1.0897    5   110.0824    3    59.8803
+   14    H         811     811   12     1.0893    5   110.4970   13   120.4283
+   15    H         812     812   12     1.0900    5   109.8332   13   240.6025
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.023243
+     Angle bending energy    =      1.792563
+     Torsional energy        =     14.329674
+     Intrasolute non-bonded  =     -6.547177
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      9.598302
+
+ Final Dipole Moment =    1.2769 D
+
+ Optimized energy =      9.598302 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3634    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7382    2   153.7890    4   179.9968
+    6    O         803     803    3     1.3562    4   111.8360    5   155.2178
+    7    C         804     804    4     1.4239    3   104.7085    5   191.9835
+    8    H         805     805    4     1.0810    3   126.5499    7   181.4271
+    9    C         806     806    7     1.3701    4   106.0075    3     8.2571
+   10    H         807     807    7     1.0807    4   127.8453    9   175.1057
+   11    H         808     808    9     1.0807    7   134.1000    4   175.7782
+   12    C         809     809    5     1.8073    3   103.1673    6    80.0000
+   13    H         810     810   12     1.0897    5   110.0960    3    59.8515
+   14    H         811     811   12     1.0893    5   110.4842   13   120.4245
+   15    H         812     812   12     1.0900    5   109.8397   13   240.5743
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    3     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.033213
+     Angle bending energy    =      2.333681
+     Torsional energy        =     15.139687
+     Intrasolute non-bonded  =     -6.523555
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     10.983026
+
+ Final Dipole Moment =    1.6458 D
+
+ Optimized energy =     10.983026 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3628    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7381    2   152.8197    4   179.9968
+    6    O         803     803    3     1.3550    4   112.6699    5   161.6743
+    7    C         804     804    4     1.4242    3   104.4677    5   188.8753
+    8    H         805     805    4     1.0809    3   126.6824    7   180.9035
+    9    C         806     806    7     1.3709    4   106.2154    3     6.0506
+   10    H         807     807    7     1.0807    4   127.7709    9   176.3371
+   11    H         808     808    9     1.0808    7   134.0567    4   176.8289
+   12    C         809     809    5     1.8074    3   103.1684    6    90.0000
+   13    H         810     810   12     1.0897    5   110.1138    3    59.7636
+   14    H         811     811   12     1.0893    5   110.4749   13   120.4333
+   15    H         812     812   12     1.0899    5   109.8408   13   240.5663
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    3     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.021537
+     Angle bending energy    =      2.154856
+     Torsional energy        =     14.054303
+     Intrasolute non-bonded  =     -6.303718
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      9.926978
+
+ Final Dipole Moment =    2.6585 D
+
+ Optimized energy =      9.926978 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3642    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7411    2   152.5848    4   179.9968
+    6    O         803     803    3     1.3555    4   112.2950    5   200.5765
+    7    C         804     804    4     1.4240    3   104.6027    5   169.7949
+    8    H         805     805    4     1.0805    3   126.7182    7   178.2382
+    9    C         806     806    7     1.3704    4   106.1551    3   353.3656
+   10    H         807     807    7     1.0807    4   127.8433    9   183.5091
+   11    H         808     808    9     1.0808    7   134.1240    4   182.9583
+   12    C         809     809    5     1.8102    3   104.4988    6   100.0000
+   13    H         810     810   12     1.0890    5   110.7385    3    63.0208
+   14    H         811     811   12     1.0894    5   110.2594   13   120.4112
+   15    H         812     812   12     1.0900    5   109.7248   13   240.1809
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    3     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.021043
+     Angle bending energy    =      2.229808
+     Torsional energy        =     12.212052
+     Intrasolute non-bonded  =     -6.005313
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      8.457589
+
+ Final Dipole Moment =    2.7241 D
+
+ Optimized energy =      8.457589 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3647    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7430    2   152.1553    4   179.9968
+    6    O         803     803    3     1.3557    4   112.2364    5   200.2990
+    7    C         804     804    4     1.4240    3   104.6333    5   169.8958
+    8    H         805     805    4     1.0801    3   126.8694    7   178.0873
+    9    C         806     806    7     1.3702    4   106.1660    3   353.4414
+   10    H         807     807    7     1.0807    4   127.8488    9   183.4499
+   11    H         808     808    9     1.0808    7   134.1410    4   182.9292
+   12    C         809     809    5     1.8111    3   105.3484    6   110.0000
+   13    H         810     810   12     1.0888    5   110.9473    3    65.4172
+   14    H         811     811   12     1.0895    5   110.1047   13   120.2096
+   15    H         812     812   12     1.0901    5   109.7748   13   239.8161
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.023351
+     Angle bending energy    =      2.426258
+     Torsional energy        =      9.972771
+     Intrasolute non-bonded  =     -5.742411
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      6.679969
+
+ Final Dipole Moment =    2.7577 D
+
+ Optimized energy =      6.679969 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3650    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7446    2   151.5920    4   179.9968
+    6    O         803     803    3     1.3556    4   112.3107    5   198.8965
+    7    C         804     804    4     1.4241    3   104.6195    5   170.5549
+    8    H         805     805    4     1.0797    3   127.0823    7   178.1207
+    9    C         806     806    7     1.3702    4   106.2126    3   353.9025
+   10    H         807     807    7     1.0807    4   127.8355    9   183.1926
+   11    H         808     808    9     1.0808    7   134.1470    4   182.7238
+   12    C         809     809    5     1.8117    3   106.1241    6   120.0000
+   13    H         810     810   12     1.0887    5   111.0133    3    67.4516
+   14    H         811     811   12     1.0895    5   109.9728   13   119.9621
+   15    H         812     812   12     1.0901    5   109.8706   13   239.4688
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    3     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.027026
+     Angle bending energy    =      2.680897
+     Torsional energy        =      7.565553
+     Intrasolute non-bonded  =     -5.520791
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      4.752685
+
+ Final Dipole Moment =    2.7737 D
+
+ Optimized energy =      4.752685 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3653    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7460    2   151.0213    4   179.9968
+    6    O         803     803    3     1.3555    4   112.4487    5   196.8263
+    7    C         804     804    4     1.4242    3   104.5816    5   171.5782
+    8    H         805     805    4     1.0794    3   127.3071    7   178.2801
+    9    C         806     806    7     1.3702    4   106.2732    3   354.5633
+   10    H         807     807    7     1.0807    4   127.8139    9   182.8540
+   11    H         808     808    9     1.0808    7   134.1435    4   182.4319
+   12    C         809     809    5     1.8120    3   106.7811    6   130.0000
+   13    H         810     810   12     1.0888    5   110.9651    3    68.4587
+   14    H         811     811   12     1.0895    5   109.8732   13   119.7309
+   15    H         812     812   12     1.0901    5   109.9897   13   239.1868
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.030921
+     Angle bending energy    =      2.957101
+     Torsional energy        =      5.199974
+     Intrasolute non-bonded  =     -5.340095
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      2.847902
+
+ Final Dipole Moment =    2.7782 D
+
+ Optimized energy =      2.847902 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3654    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7470    2   150.4944    4   179.9968
+    6    O         803     803    3     1.3554    4   112.6235    5   194.1574
+    7    C         804     804    4     1.4243    3   104.5311    5   172.9000
+    8    H         805     805    4     1.0792    3   127.5190    7   178.5548
+    9    C         806     806    7     1.3703    4   106.3400    3   355.4368
+   10    H         807     807    7     1.0807    4   127.7918    9   182.3997
+   11    H         808     808    9     1.0808    7   134.1371    4   182.0444
+   12    C         809     809    5     1.8122    3   107.3016    6   140.0000
+   13    H         810     810   12     1.0890    5   110.8595    3    68.2194
+   14    H         811     811   12     1.0896    5   109.8175   13   119.5683
+   15    H         812     812   12     1.0901    5   110.1041   13   239.0085
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.034512
+     Angle bending energy    =      3.216367
+     Torsional energy        =      3.090124
+     Intrasolute non-bonded  =     -5.200002
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      1.141001
+
+ Final Dipole Moment =    2.7766 D
+
+ Optimized energy =      1.141001 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3656    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7478    2   150.0464    4   179.9968
+    6    O         803     803    3     1.3552    4   112.7987    5   191.0363
+    7    C         804     804    4     1.4244    3   104.4789    5   174.4581
+    8    H         805     805    4     1.0790    3   127.6971    7   178.8840
+    9    C         806     806    7     1.3704    4   106.4026    3   356.4510
+   10    H         807     807    7     1.0807    4   127.7671    9   181.8704
+   11    H         808     808    9     1.0808    7   134.1283    4   181.5956
+   12    C         809     809    5     1.8122    3   107.6868    6   150.0000
+   13    H         810     810   12     1.0892    5   110.7403    3    67.0175
+   14    H         811     811   12     1.0896    5   109.7874   13   119.4710
+   15    H         812     812   12     1.0900    5   110.2011   13   238.9055
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.037319
+     Angle bending energy    =      3.426990
+     Torsional energy        =      1.427999
+     Intrasolute non-bonded  =     -5.100654
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     -0.208346
+
+ Final Dipole Moment =    2.7728 D
+
+ Optimized energy =     -0.208346 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3656    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7483    2   149.7071    4   179.9968
+    6    O         803     803    3     1.3550    4   112.9471    5   187.5610
+    7    C         804     804    4     1.4245    3   104.4340    5   176.2016
+    8    H         805     805    4     1.0789    3   127.8341    7   179.2411
+    9    C         806     806    7     1.3705    4   106.4533    3   357.5704
+   10    H         807     807    7     1.0807    4   127.7490    9   181.2830
+   11    H         808     808    9     1.0808    7   134.1200    4   181.0937
+   12    C         809     809    5     1.8122    3   107.9459    6   160.0000
+   13    H         810     810   12     1.0894    5   110.6271    3    65.1785
+   14    H         811     811   12     1.0896    5   109.7752   13   119.4229
+   15    H         812     812   12     1.0899    5   110.2845   13   238.8530
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.039083
+     Angle bending energy    =      3.564127
+     Torsional energy        =      0.365608
+     Intrasolute non-bonded  =     -5.041629
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     -1.072812
+
+ Final Dipole Moment =    2.7694 D
+
+ Optimized energy =     -1.072812 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3657    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7486    2   149.4952    4   179.9968
+    6    O         803     803    3     1.3549    4   113.0461    5   183.8425
+    7    C         804     804    4     1.4245    3   104.4040    5   178.0691
+    8    H         805     805    4     1.0789    3   127.9187    7   179.6172
+    9    C         806     806    7     1.3706    4   106.4864    3   358.7662
+   10    H         807     807    7     1.0807    4   127.7360    9   180.6528
+   11    H         808     808    9     1.0808    7   134.1143    4   180.5561
+   12    C         809     809    5     1.8121    3   108.0938    6   170.0000
+   13    H         810     810   12     1.0895    5   110.5271    3    62.9679
+   14    H         811     811   12     1.0896    5   109.7711   13   119.4091
+   15    H         812     812   12     1.0898    5   110.3609   13   238.8307
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.039695
+     Angle bending energy    =      3.611683
+     Torsional energy        =      0.000306
+     Intrasolute non-bonded  =     -5.022084
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     -1.370399
+
+ Final Dipole Moment =    2.7680 D
+
+ Optimized energy =     -1.370399 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3657    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7487    2   149.4233    4   179.9968
+    6    O         803     803    3     1.3549    4   113.0808    5   179.9996
+    7    C         804     804    4     1.4246    3   104.3935    5   179.9997
+    8    H         805     805    4     1.0789    3   127.9475    7   180.0004
+    9    C         806     806    7     1.3706    4   106.4979    3     0.0007
+   10    H         807     807    7     1.0807    4   127.7325    9   179.9994
+   11    H         808     808    9     1.0808    7   134.1139    4   179.9995
+   12    C         809     809    5     1.8121    3   108.1414    6   180.0000
+   13    H         810     810   12     1.0897    5   110.4396    3    60.5891
+   14    H         811     811   12     1.0896    5   109.7701   13   119.4121
+   15    H         812     812   12     1.0897    5   110.4395   13   238.8245
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.039086
+     Angle bending energy    =      3.564104
+     Torsional energy        =      0.365617
+     Intrasolute non-bonded  =     -5.041619
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     -1.072812
+
+ Final Dipole Moment =    2.7694 D
+
+ Optimized energy =     -1.072812 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3657    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7486    2   149.4952    4   179.9968
+    6    O         803     803    3     1.3549    4   113.0460    5   176.1584
+    7    C         804     804    4     1.4245    3   104.4039    5   181.9312
+    8    H         805     805    4     1.0789    3   127.9190    7   180.3820
+    9    C         806     806    7     1.3706    4   106.4865    3     1.2322
+   10    H         807     807    7     1.0807    4   127.7365    9   179.3482
+   11    H         808     808    9     1.0808    7   134.1152    4   179.4444
+   12    C         809     809    5     1.8121    3   108.0934    6   190.0000
+   13    H         810     810   12     1.0898    5   110.3607    3    58.1989
+   14    H         811     811   12     1.0896    5   109.7719   13   119.4220
+   15    H         812     812   12     1.0895    5   110.5269   13   238.8313
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.037310
+     Angle bending energy    =      3.426978
+     Torsional energy        =      1.427973
+     Intrasolute non-bonded  =     -5.100606
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     -0.208345
+
+ Final Dipole Moment =    2.7728 D
+
+ Optimized energy =     -0.208345 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3656    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7483    2   149.7068    4   179.9968
+    6    O         803     803    3     1.3550    4   112.9467    5   172.4379
+    7    C         804     804    4     1.4245    3   104.4344    5   183.7990
+    8    H         805     805    4     1.0789    3   127.8329    7   180.7583
+    9    C         806     806    7     1.3705    4   106.4531    3     2.4300
+   10    H         807     807    7     1.0807    4   127.7477    9   178.7163
+   11    H         808     808    9     1.0808    7   134.1199    4   178.9055
+   12    C         809     809    5     1.8122    3   107.9462    6   200.0000
+   13    H         810     810   12     1.0899    5   110.2833    3    55.9712
+   14    H         811     811   12     1.0896    5   109.7759   13   119.4302
+   15    H         812     812   12     1.0894    5   110.6271   13   238.8541
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.034514
+     Angle bending energy    =      3.216236
+     Torsional energy        =      3.090071
+     Intrasolute non-bonded  =     -5.199820
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      1.141001
+
+ Final Dipole Moment =    2.7767 D
+
+ Optimized energy =      1.141001 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3656    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7478    2   150.0473    4   179.9968
+    6    O         803     803    3     1.3552    4   112.7994    5   168.9618
+    7    C         804     804    4     1.4244    3   104.4779    5   185.5445
+    8    H         805     805    4     1.0790    3   127.7000    7   181.1142
+    9    C         806     806    7     1.3704    4   106.4034    3     3.5485
+   10    H         807     807    7     1.0807    4   127.7659    9   178.1307
+   11    H         808     808    9     1.0808    7   134.1285    4   178.4048
+   12    C         809     809    5     1.8122    3   107.6868    6   210.0000
+   13    H         810     810   12     1.0900    5   110.1997    3    54.0829
+   14    H         811     811   12     1.0896    5   109.7889   13   119.4352
+   15    H         812     812   12     1.0892    5   110.7406   13   238.9070
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    3     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.030931
+     Angle bending energy    =      2.957045
+     Torsional energy        =      5.199889
+     Intrasolute non-bonded  =     -5.339962
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      2.847903
+
+ Final Dipole Moment =    2.7782 D
+
+ Optimized energy =      2.847903 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3655    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7470    2   150.4938    4   179.9968
+    6    O         803     803    3     1.3554    4   112.6231    5   165.8399
+    7    C         804     804    4     1.4243    3   104.5316    5   187.1083
+    8    H         805     805    4     1.0792    3   127.5177    7   181.4379
+    9    C         806     806    7     1.3703    4   106.3402    3     4.5552
+   10    H         807     807    7     1.0807    4   127.7902    9   177.6082
+   11    H         808     808    9     1.0808    7   134.1364    4   177.9596
+   12    C         809     809    5     1.8122    3   107.3029    6   220.0000
+   13    H         810     810   12     1.0901    5   110.1028    3    52.7830
+   14    H         811     811   12     1.0896    5   109.8188   13   119.4401
+   15    H         812     812   12     1.0890    5   110.8592   13   239.0105
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.027009
+     Angle bending energy    =      2.681810
+     Torsional energy        =      7.564637
+     Intrasolute non-bonded  =     -5.520764
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      4.752692
+
+ Final Dipole Moment =    2.7735 D
+
+ Optimized energy =      4.752692 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3653    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7460    2   151.0207    4   179.9968
+    6    O         803     803    3     1.3555    4   112.4502    5   163.1882
+    7    C         804     804    4     1.4242    3   104.5816    5   188.4218
+    8    H         805     805    4     1.0794    3   127.3085    7   181.7114
+    9    C         806     806    7     1.3702    4   106.2738    3     5.4214
+   10    H         807     807    7     1.0807    4   127.8147    9   177.1592
+   11    H         808     808    9     1.0808    7   134.1442    4   177.5766
+   12    C         809     809    5     1.8120    3   106.7824    6   230.0000
+   13    H         810     810   12     1.0901    5   109.9899    3    52.3794
+   14    H         811     811   12     1.0895    5   109.8769   13   119.4589
+   15    H         812     812   12     1.0888    5   110.9641   13   239.1925
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.023402
+     Angle bending energy    =      2.426070
+     Torsional energy        =      9.973230
+     Intrasolute non-bonded  =     -5.742736
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      6.679966
+
+ Final Dipole Moment =    2.7576 D
+
+ Optimized energy =      6.679966 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3650    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7446    2   151.5925    4   179.9968
+    6    O         803     803    3     1.3556    4   112.3102    5   161.1007
+    7    C         804     804    4     1.4241    3   104.6188    5   189.4386
+    8    H         805     805    4     1.0797    3   127.0820    7   181.8907
+    9    C         806     806    7     1.3702    4   106.2128    3     6.1068
+   10    H         807     807    7     1.0807    4   127.8347    9   176.8053
+   11    H         808     808    9     1.0808    7   134.1462    4   177.2807
+   12    C         809     809    5     1.8117    3   106.1238    6   240.0000
+   13    H         810     810   12     1.0901    5   109.8727    3    53.0582
+   14    H         811     811   12     1.0895    5   109.9716   13   119.5071
+   15    H         812     812   12     1.0887    5   111.0129   13   239.4662
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.021031
+     Angle bending energy    =      2.230268
+     Torsional energy        =     12.211747
+     Intrasolute non-bonded  =     -6.005452
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      8.457593
+
+ Final Dipole Moment =    2.7241 D
+
+ Optimized energy =      8.457593 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3647    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7430    2   152.1547    4   179.9968
+    6    O         803     803    3     1.3557    4   112.2377    5   159.7070
+    7    C         804     804    4     1.4240    3   104.6328    5   190.1033
+    8    H         805     805    4     1.0801    3   126.8698    7   181.9074
+    9    C         806     806    7     1.3702    4   106.1665    3     6.5545
+   10    H         807     807    7     1.0807    4   127.8471    9   176.5528
+   11    H         808     808    9     1.0808    7   134.1411    4   177.0772
+   12    C         809     809    5     1.8111    3   105.3483    6   250.0000
+   13    H         810     810   12     1.0901    5   109.7742    3    54.7703
+   14    H         811     811   12     1.0894    5   110.1056   13   119.6081
+   15    H         812     812   12     1.0888    5   110.9481   13   239.8166
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    3     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.021524
+     Angle bending energy    =      2.154624
+     Torsional energy        =     14.054534
+     Intrasolute non-bonded  =     -6.303708
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      9.926974
+
+ Final Dipole Moment =    2.6584 D
+
+ Optimized energy =      9.926974 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3642    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7411    2   152.5853    4   179.9968
+    6    O         803     803    3     1.3555    4   112.2932    5   159.4186
+    7    C         804     804    4     1.4240    3   104.6037    5   190.2027
+    8    H         805     805    4     1.0805    3   126.7159    7   181.7689
+    9    C         806     806    7     1.3704    4   106.1542    3     6.6413
+   10    H         807     807    7     1.0807    4   127.8448    9   176.4880
+   11    H         808     808    9     1.0808    7   134.1250    4   177.0373
+   12    C         809     809    5     1.8101    3   104.5006    6   260.0000
+   13    H         810     810   12     1.0900    5   109.7220    3    56.7923
+   14    H         811     811   12     1.0894    5   110.2608   13   119.7672
+   15    H         812     812   12     1.0890    5   110.7377   13   240.1799
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.030245
+     Angle bending energy    =      2.434627
+     Torsional energy        =     15.043234
+     Intrasolute non-bonded  =     -6.606488
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     10.901618
+
+ Final Dipole Moment =    2.4912 D
+
+ Optimized energy =     10.901618 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3632    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7391    2   152.4589    4   179.9968
+    6    O         803     803    3     1.3549    4   112.7961    5   163.1552
+    7    C         804     804    4     1.4242    3   104.4382    5   188.3495
+    8    H         805     805    4     1.0807    3   126.7058    7   181.3180
+    9    C         806     806    7     1.3710    4   106.2610    3     5.3785
+   10    H         807     807    7     1.0807    4   127.7847    9   177.1745
+   11    H         808     808    9     1.0808    7   134.0748    4   177.6480
+   12    C         809     809    5     1.8087    3   103.5996    6   270.0000
+   13    H         810     810   12     1.0900    5   109.7358    3    58.7582
+   14    H         811     811   12     1.0893    5   110.4184   13   119.9881
+   15    H         812     812   12     1.0893    5   110.3902   13   240.5080
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.023302
+     Angle bending energy    =      1.796019
+     Torsional energy        =     14.326260
+     Intrasolute non-bonded  =     -6.547266
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      9.598314
+
+ Final Dipole Moment =    1.2782 D
+
+ Optimized energy =      9.598314 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3634    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7382    2   153.7843    4   179.9968
+    6    O         803     803    3     1.3562    4   111.8419    5   204.7437
+    7    C         804     804    4     1.4238    3   104.7065    5   168.0385
+    8    H         805     805    4     1.0810    3   126.5506    7   178.5774
+    9    C         806     806    7     1.3701    4   106.0092    3   351.7576
+   10    H         807     807    7     1.0807    4   127.8440    9   184.8845
+   11    H         808     808    9     1.0807    7   134.1002    4   184.2116
+   12    C         809     809    5     1.8073    3   103.1686    6   280.0000
+   13    H         810     810   12     1.0900    5   109.8381    3    59.5783
+   14    H         811     811   12     1.0893    5   110.4822   13   120.1502
+   15    H         812     812   12     1.0897    5   110.0993   13   240.5746
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.022607
+     Angle bending energy    =      1.762579
+     Torsional energy        =     12.471856
+     Intrasolute non-bonded  =     -6.604841
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      7.652200
+
+ Final Dipole Moment =    1.0900 D
+
+ Optimized energy =      7.652200 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3634    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7382    2   153.8292    4   179.9968
+    6    O         803     803    3     1.3563    4   111.7889    5   205.1232
+    7    C         804     804    4     1.4238    3   104.7219    5   167.8453
+    8    H         805     805    4     1.0810    3   126.5357    7   178.5236
+    9    C         806     806    7     1.3700    4   105.9986    3   351.6331
+   10    H         807     807    7     1.0807    4   127.8425    9   184.9360
+   11    H         808     808    9     1.0807    7   134.0929    4   184.2550
+   12    C         809     809    5     1.8073    3   103.1642    6   290.0000
+   13    H         810     810   12     1.0900    5   109.8337    3    59.5087
+   14    H         811     811   12     1.0893    5   110.4972   13   120.1756
+   15    H         812     812   12     1.0897    5   110.0812   13   240.6030
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.024736
+     Angle bending energy    =      1.889692
+     Torsional energy        =     10.176138
+     Intrasolute non-bonded  =     -6.665894
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      5.424672
+
+ Final Dipole Moment =    0.9731 D
+
+ Optimized energy =      5.424672 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3632    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7382    2   153.5586    4   179.9968
+    6    O         803     803    3     1.3562    4   112.0076    5   203.6762
+    7    C         804     804    4     1.4239    3   104.6599    5   168.5205
+    8    H         805     805    4     1.0810    3   126.5610    7   178.6224
+    9    C         806     806    7     1.3702    4   106.0561    3   352.1476
+   10    H         807     807    7     1.0807    4   127.8169    9   184.6254
+   11    H         808     808    9     1.0807    7   134.0684    4   183.9854
+   12    C         809     809    5     1.8073    3   103.1768    6   300.0000
+   13    H         810     810   12     1.0900    5   109.8388    3    59.5366
+   14    H         811     811   12     1.0893    5   110.5111   13   120.2017
+   15    H         812     812   12     1.0897    5   110.0591   13   240.6313
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.028293
+     Angle bending energy    =      2.107521
+     Torsional energy        =      7.707511
+     Intrasolute non-bonded  =     -6.719467
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      3.123858
+
+ Final Dipole Moment =    0.9060 D
+
+ Optimized energy =      3.123858 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3629    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7384    2   153.1441    4   179.9968
+    6    O         803     803    3     1.3559    4   112.3508    5   201.1179
+    7    C         804     804    4     1.4240    3   104.5625    5   169.7338
+    8    H         805     805    4     1.0810    3   126.6071    7   178.8029
+    9    C         806     806    7     1.3705    4   106.1472    3   353.0386
+   10    H         807     807    7     1.0807    4   127.7756    9   184.0987
+   11    H         808     808    9     1.0807    7   134.0352    4   183.5324
+   12    C         809     809    5     1.8075    3   103.2205    6   310.0000
+   13    H         810     810   12     1.0899    5   109.8536    3    59.6394
+   14    H         811     811   12     1.0893    5   110.5208   13   120.2284
+   15    H         812     812   12     1.0897    5   110.0351   13   240.6548
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.032417
+     Angle bending energy    =      2.373308
+     Torsional energy        =      5.292983
+     Intrasolute non-bonded  =     -6.761410
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =      0.937299
+
+ Final Dipole Moment =    0.8739 D
+
+ Optimized energy =      0.937299 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3625    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7385    2   152.6865    4   179.9968
+    6    O         803     803    3     1.3556    4   112.7287    5   197.7625
+    7    C         804     804    4     1.4242    3   104.4576    5   171.3428
+    8    H         805     805    4     1.0810    3   126.6579    7   179.0204
+    9    C         806     806    7     1.3709    4   106.2465    3   354.1819
+   10    H         807     807    7     1.0807    4   127.7333    9   183.4270
+   11    H         808     808    9     1.0807    7   134.0020    4   182.9542
+   12    C         809     809    5     1.8076    3   103.2808    6   320.0000
+   13    H         810     810   12     1.0899    5   109.8736    3    59.8260
+   14    H         811     811   12     1.0892    5   110.5326   13   120.2568
+   15    H         812     812   12     1.0897    5   110.0084   13   240.6802
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    3     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.036559
+     Angle bending energy    =      2.644171
+     Torsional energy        =      3.144359
+     Intrasolute non-bonded  =     -6.790943
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     -0.965853
+
+ Final Dipole Moment =    0.8633 D
+
+ Optimized energy =     -0.965853 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3622    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7387    2   152.2583    4   179.9968
+    6    O         803     803    3     1.3553    4   113.0817    5   193.8081
+    7    C         804     804    4     1.4243    3   104.3607    5   173.2606
+    8    H         805     805    4     1.0810    3   126.7047    7   179.2588
+    9    C         806     806    7     1.3712    4   106.3384    3   355.4988
+   10    H         807     807    7     1.0807    4   127.6937    9   182.6518
+   11    H         808     808    9     1.0807    7   133.9699    4   182.2851
+   12    C         809     809    5     1.8078    3   103.3591    6   330.0000
+   13    H         810     810   12     1.0899    5   109.8927    3    59.9474
+   14    H         811     811   12     1.0892    5   110.5421   13   120.2866
+   15    H         812     812   12     1.0897    5   109.9802   13   240.6997
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.040076
+     Angle bending energy    =      2.876688
+     Torsional energy        =      1.453147
+     Intrasolute non-bonded  =     -6.810404
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     -2.440494
+
+ Final Dipole Moment =    0.8631 D
+
+ Optimized energy =     -2.440494 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3619    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7388    2   151.9144    4   179.9968
+    6    O         803     803    3     1.3551    4   113.3630    5   189.4321
+    7    C         804     804    4     1.4244    3   104.2849    5   175.3900
+    8    H         805     805    4     1.0810    3   126.7411    7   179.5039
+    9    C         806     806    7     1.3715    4   106.4122    3   356.9387
+   10    H         807     807    7     1.0807    4   127.6627    9   181.8039
+   11    H         808     808    9     1.0807    7   133.9492    4   181.5538
+   12    C         809     809    5     1.8079    3   103.4228    6   340.0000
+   13    H         810     810   12     1.0899    5   109.9044    3    59.9762
+   14    H         811     811   12     1.0892    5   110.5495   13   120.3088
+   15    H         812     812   12     1.0898    5   109.9629   13   240.7136
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.042415
+     Angle bending energy    =      3.033292
+     Torsional energy        =      0.371988
+     Intrasolute non-bonded  =     -6.821330
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     -3.373634
+
+ Final Dipole Moment =    0.8657 D
+
+ Optimized energy =     -3.373634 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3618    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7390    2   151.6936    4   179.9968
+    6    O         803     803    3     1.3549    4   113.5439    5   184.7836
+    7    C         804     804    4     1.4245    3   104.2363    5   177.6606
+    8    H         805     805    4     1.0810    3   126.7656    7   179.7519
+    9    C         806     806    7     1.3716    4   106.4592    3   358.4512
+   10    H         807     807    7     1.0807    4   127.6436    9   180.9126
+   11    H         808     808    9     1.0807    7   133.9336    4   180.7858
+   12    C         809     809    5     1.8079    3   103.4670    6   350.0000
+   13    H         810     810   12     1.0898    5   109.9166    3    59.8416
+   14    H         811     811   12     1.0892    5   110.5537   13   120.3387
+   15    H         812     812   12     1.0898    5   109.9406   13   240.7252
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+          RESULTS OF SOLUTE OPTIMIZATION
+
+ Optimization procedure: BFGS                
+
+ No. Iterations =    2     Tolerance =  0.000001 kcal/mol
+ No. Variables  =   32
+
+ Energy components:
+     Bond stretching energy  =      0.043224
+     Angle bending energy    =      3.088532
+     Torsional energy        =      0.000119
+     Intrasolute non-bonded  =     -6.824865
+     Intersolute non-bonded  =      0.000000
+     Polarization energy     =      0.000000
+     Bond constraints energy =      0.000000
+     Total Energy            =     -3.692991
+
+ Final Dipole Moment =    0.8670 D
+
+ Optimized energy =     -3.692991 kcal/mol
+
+ Final Z-Matrix:
+
+
+
+
+                         Z-Matrix for Reference Solutes
+
+
+ --------------------------------------------------------------------------------
+                   Init.   Final                        Theta           PHI
+   I    Symbol     Type    Type   J     R(IJ)     K      IJK      L     IJKL
+ --------------------------------------------------------------------------------
+    1    X          -1       0    0     0.0000    0     0.0000    0     0.0000
+    2    X          -1       0    1     1.0000    0     0.0000    0     0.0000
+    3    C         800     800    2     1.0000    1    90.0000    0     0.0000
+    4    C         801     801    3     1.3617    2    90.0000    1     0.0000
+    5    S         802     802    3     1.7390    2   151.6172    4   179.9968
+    6    O         803     803    3     1.3549    4   113.6061    5   180.0000
+    7    C         804     804    4     1.4245    3   104.2197    5   180.0000
+    8    H         805     805    4     1.0810    3   126.7737    7   180.0000
+    9    C         806     806    7     1.3717    4   106.4754    3     0.0000
+   10    H         807     807    7     1.0807    4   127.6361    9   180.0000
+   11    H         808     808    9     1.0807    7   133.9275    4   180.0000
+   12    C         809     809    5     1.8079    3   103.4829    6   360.0000
+   13    H         810     810   12     1.0898    5   109.9263    3    59.6343
+   14    H         811     811   12     1.0892    5   110.5553   13   120.3657
+   15    H         812     812   12     1.0898    5   109.9263   13   240.7313
+ --------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
+
+
+
+                    BOSS Z-Matrix                 
+
+              Results Summary for Scanning Dihedral Angle   12
+
+             Phi,          Dipole,         E(Phi),         Delta E
+             0.000,        0.86701,       -3.69299,        0.00000
+            10.000,        0.86565,       -3.37363,        0.31936
+            20.000,        0.86302,       -2.44049,        1.25250
+            30.000,        0.86321,       -0.96585,        2.72714
+            40.000,        0.87391,        0.93730,        4.63029
+            50.000,        0.90597,        3.12386,        6.81685
+            60.000,        0.97299,        5.42467,        9.11766
+            70.000,        1.09002,        7.65220,       11.34519
+            80.000,        1.27691,        9.59830,       13.29129
+            90.000,        1.64576,       10.98303,       14.67602
+           100.000,        2.65848,        9.92698,       13.61997
+           110.000,        2.72411,        8.45759,       12.15058
+           120.000,        2.75773,        6.67997,       10.37296
+           130.000,        2.77365,        4.75268,        8.44568
+           140.000,        2.77819,        2.84790,        6.54089
+           150.000,        2.77660,        1.14100,        4.83399
+           160.000,        2.77277,       -0.20835,        3.48464
+           170.000,        2.76939,       -1.07281,        2.62018
+           180.000,        2.76804,       -1.37040,        2.32259
+           190.000,        2.76939,       -1.07281,        2.62018
+           200.000,        2.77278,       -0.20835,        3.48465
+           210.000,        2.77667,        1.14100,        4.83399
+           220.000,        2.77820,        2.84790,        6.54089
+           230.000,        2.77354,        4.75269,        8.44568
+           240.000,        2.75759,        6.67997,       10.37296
+           250.000,        2.72405,        8.45759,       12.15058
+           260.000,        2.65843,        9.92697,       13.61996
+           270.000,        2.49119,       10.90162,       14.59461
+           280.000,        1.27816,        9.59831,       13.29131
+           290.000,        1.08996,        7.65220,       11.34519
+           300.000,        0.97308,        5.42467,        9.11766
+           310.000,        0.90597,        3.12386,        6.81685
+           320.000,        0.87395,        0.93730,        4.63029
+           330.000,        0.86326,       -0.96585,        2.72714
+           340.000,        0.86307,       -2.44049,        1.25250
+           350.000,        0.86571,       -3.37363,        0.31936
+           360.000,        0.86701,       -3.69299,        0.00000
+total CPU time(sec)  =      2.0

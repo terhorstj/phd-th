@@ -1,0 +1,49 @@
+#!/bin/bash
+
+gnuplot << TOEND
+
+#set term x11 enhanced persist
+#set term aqua font "Times-New-Roman,13"
+#set term aqua font "Times,13"
+#set terminal postscript eps color enhanced "Times" 20
+#set terminal postscript eps color enhanced
+   
+                      # size 3.5,2.62
+set terminal epslatex color colortext
+set output 'scan.tex
+
+#set xtics ("C2" 1, "C2'" 2, "C3" 3, "C3'" 4, "C4" 5, "C4'" 6, "C5" 7, "C5'" 8, "C6" 9, "C6'" 10)
+set ytic auto
+
+#set yrange [0:0.04]
+
+set ylabel '$\Delta\Delta G_{\textrm{bind}}$ (kcal/mol)'
+#set log x
+#set xrange [0.00001:0.1]
+
+#set terminal png nocrop
+#set output 'graph.png'
+
+set bmargin 2
+#set nokey
+#set size square
+set key top #center
+#f(x) = m*x + b
+#fit f(x) 'data.dat' using 1:2 via m,b
+
+set style data histogram
+set style histogram cluster gap 1
+set style fill solid border
+f(x) = 0
+
+plot "data.dat" using 2:xtic(1) title 'GB/SA (no threshold)' linetype 1 lc 7 fs pattern 3, \
+     "data.dat" using 3:xtic(1) title 'GB/SA (threshold)' linetype 1 lc 9 fs pattern 3, \
+     "data.dat" using 4:xtic(1) title 'TIP4P' linetype 1 lc 7 fs pattern 2, \
+      f(x) with lines notitle linetype 1 lc 7 lw 3
+
+TOEND
+
+epstopdf *.eps
+rm *.eps
+
+exit

@@ -1,0 +1,25 @@
+#!/usr/bin/gnuplot -persist
+
+set title "Relative free energies of solvation for all test perturbations (kcal/mol)."
+
+set xtic auto
+set ytic auto
+
+set xrange [-16:16]
+set yrange [-16:16]
+
+set xlabel "TIP4P"
+set ylabel "GB/SA"
+
+#set terminal png nocrop
+#set output 'graph.png'
+
+set bmargin 5
+set nokey
+set size square
+
+f(x) = m*x + b
+fit f(x) 'data.dat' using 1:2 via m,b
+
+plot "data.dat" with points pointtype 17 lc 0, f(x) lc 0
+

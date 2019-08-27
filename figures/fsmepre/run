@@ -1,0 +1,10 @@
+#!/bin/csh 
+
+csh dihdrive
+tail -37 dihsum | perl -pi -e 's/,\s+/\t/g' > results
+cat results | awk '{print $1, $4}' > oplstmp
+paste oplstmp mp2 > plot.dat
+
+./plot.exe
+
+exit 

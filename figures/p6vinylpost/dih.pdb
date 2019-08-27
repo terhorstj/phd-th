@@ -1,0 +1,18 @@
+REMARK    BOSS Z-Matrix                 
+REMARK    Created by BOSS 4.7 Sep06 Linux 
+ATOM      1  C00 UNK     1       1.000   1.000   0.000
+ATOM      2  C01 UNK     1      -0.419   1.000   0.000
+ATOM      3  C02 UNK     1       1.822   2.190  -0.001
+ATOM      4  N03 UNK     1       1.686  -0.166   0.001
+ATOM      5  C04 UNK     1      -1.118  -0.224   0.001
+ATOM      6  H05 UNK     1      -0.991   1.914  -0.001
+ATOM      7  C06 UNK     1      -0.385  -1.424   0.002
+ATOM      8  H07 UNK     1      -2.198  -0.239   0.001
+ATOM      9  C08 UNK     1       1.019  -1.339   0.002
+ATOM     10  H09 UNK     1      -0.883  -2.382   0.003
+ATOM     11  H0A UNK     1       1.626  -2.233   0.003
+ATOM     12  C0B UNK     1       1.286   3.426  -0.002
+ATOM     13  H0C UNK     1       2.900   2.109  -0.001
+ATOM     14  H0D UNK     1       0.228   3.628  -0.003
+ATOM     15  H0E UNK     1       1.937   4.288  -0.003
+END

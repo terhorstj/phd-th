@@ -1,0 +1,63 @@
+#!/bin/bash
+
+gnuplot << TOEND
+
+#set term x11 enhanced persist
+#set term aqua font "Times-New-Roman,13"
+#set term aqua font "Times,13"
+#set terminal postscript eps color enhanced "Times" 20
+#set terminal postscript eps color enhanced
+   
+                      # size 3.5,2.62
+set terminal epslatex color colortext
+set output 'statddg.tex'
+
+# Setting the output file name --- use for eps postscript
+# set output 'plot.eps'
+
+#set title 'Number of atom-pair calculations skipped using AGBP'
+#set size square
+set nokey 
+set log x
+#set xtics 1
+#set ytic auto
+#unset ytic
+set grid xtics ytics
+set mxtics
+set mytics
+#set xzeroaxis linetype 1 lc 0 linewidth 2.5
+#set yzeroaxis linetype 1 lc 0 linewidth 2.5
+
+
+           # you can flip x-axis numbers in reverse order like this
+#set xrange [150:0] 
+set xrange [0.00005:0.2]
+set yrange [1:2.1]
+
+#            eps postscript term required for /Symbols
+#set xlabel "{/Symbol d} (ppm)" 
+set xlabel 'Threshold $\tau$ (\AA)'
+set ylabel 'Average $\Delta\Delta G_{\textrm{bind}}(\textbf{A}\longrightarrow \textbf{B})$ (kcal/mol)'
+#set terminal png nocrop
+#set output 'graph.png'
+
+set bmargin 4
+
+#f(x) = m*x + b
+#fit f(x) 'data.dat' using 1:2 via m, b
+
+#                                   linetype 0 for dotted
+#                                   impulses for bars
+#                                   nothing for just points
+plot "data.dat" linetype 1 lw 2 lc 7 w errorbars,\
+     "data.dat" using 1:2  with linespoints linetype 1 lw 3 pointtype 4 lc 7
+TOEND
+
+# this stuff is to streamline eps postscript output
+perl -pi -e 's/put\(176/put\(250/g' *tex
+perl -pi -e 's/statddg/figures\/statddg\/statddg/g' *tex
+#rm fit.log
+epstopdf *.eps 
+rm *.eps
+#open plot.pdf
+

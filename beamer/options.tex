@@ -1,0 +1,99 @@
+% ==========================================================================================
+% ==========================================================================================
+% ==========================================================================================
+
+% Basic Setup
+
+		\mode<presentation>
+				{
+					  \usetheme{Madrid}    % Hanover  
+					  \usecolortheme{dolphin} % rose
+					  \usefonttheme{serif}   % structurebold
+					  \setbeamertemplate{navigation symbols}{} 
+					  \setbeamertemplate{footline}{}   
+					  \setbeamertemplate{frametitle}{\centering\normalsize\bfseries\slshape\insertframetitle\par\vskip-7pt\hrulefill} 
+                                          \setbeamercolor{alerted text}{fg=blue}
+				} 
+               % \addtobeamertemplate{footline}{\vskip-1cm\hskip17pt\insertframenumber\,/\,\inserttotalframenumber\kern1em\vskip2pt}
+                
+% ==========================================================================================
+% ==========================================================================================
+% ==========================================================================================
+
+% Packages
+             %sansmathfonts
+
+        \usepackage[T1]{fontenc}
+		\usepackage{microtype,verbatim,parskip,graphicx,siunitx,nicefrac,booktabs,textpos,mathrsfs} %,rotating,textcomp 
+		\usepackage[version=4]{mhchem}
+		\usepackage{chemfig}\setchemfig{atom sep=2.5em}
+
+		% Note: sansmathfonts redefines ALL math (including Greek) as sans-serif.
+		%       we want this for Greek letters that look nice when mixed with a sans-serif font like helvet.
+		%       however, this also forces Arabic numerals into cmu-serif for math mode, which looks bad next to helvet text.
+		%       so below, we activate helvet as our main font, then add helvet serif math too.
+		%       for some reason, this does not affect the Greek, which is why we need sansmathfonts beforehand.   
+
+		%\usepackage{helvet}
+		%\usepackage[helvet]{sfmath}
+
+% ==========================================================================================
+% ==========================================================================================
+% ==========================================================================================
+
+% Definitions
+
+	    \def\deg{$^{\circ}$}
+	    \def\tild{$\sim$}
+	    \def\dg{$\Delta G$}
+	    \def\electron{e$^-$}
+	    \def\Ecell{$\mathscr{E}_{\textnormal{cell}}$}
+	    \def\Enotcell{$\mathscr{E}^{\circ}_{\textnormal{cell}}$}
+	    \def\Enot{$\mathscr{E}^{\circ}$}
+	    \def\not{^\circ}
+	    \def\Ka{$K_{\textnormal{a}}$}
+	    \def\Ksp{$K_{\textnormal{sp}}$}
+	    \def\Keq{$K_{\textnormal{eq}}$}
+	    \def\pKa{p$K_{\textnormal{a}}$}
+	    \def\dipole{+\hspace*{-3mm}$\longrightarrow$}
+	    \def\cmi{cm$^{-1}$}
+	    \def\cd{$\cdot$}
+	    \def\dd{\end{document}} % useful for debugging
+
+% ==========================================================================================
+% ==========================================================================================
+% ==========================================================================================
+
+% Commands 
+
+		\newcommand*\unit[1]{\textnormal{ #1}}
+		% provides \obox{0}{0}{1cm}{1cm}   where: x y wd ht
+		\newcommand\obox[4]{\pgfsetfillopacity{0.5}\begin{textblock}{}(#1,#2)\setlength\textwidth{#3}
+		\begin{beamercolorbox}{block body}\vspace*{#4}\end{beamercolorbox}\end{textblock}\pgfsetfillopacity{1}}
+
+		% provides \tbox{0}{0}{text} where: x y text
+		\newcommand\tbox[3]{\begin{textblock}{8}(#1,#2)#3\end{textblock}}
+
+% ==========================================================================================
+% ==========================================================================================
+% ==========================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
